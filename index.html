@@ -1,72 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Guilda 5 - Imperial Kids</title>
   <style>
     body {
-      background-color: #0b0b0b;
-      color: #ffffff;
-      font-family: 'Poppins', sans-serif;
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
+
     header {
       background-color: #4B0082;
-      padding: 20px;
       text-align: center;
+      padding: 20px;
     }
+
+    header img {
+      width: 100px;
+      border-radius: 50%;
+    }
+
     header h1 {
       color: #FFD700;
-      font-size: 36px;
-      margin: 0;
+      margin: 10px 0 0;
     }
+
+    header p {
+      margin: 5px 0 0;
+      color: white;
+    }
+
     section {
       padding: 20px;
-      max-width: 800px;
-      margin: auto;
     }
+
     h2 {
       color: #FFD700;
-      border-bottom: 2px solid #FFD700;
+      border-bottom: 3px solid #FFD700;
       padding-bottom: 5px;
     }
+
     ul {
-      list-style: square;
+      list-style-type: square;
       padding-left: 20px;
     }
-    .lideres p {
-      margin: 5px 0;
-    }
+
     footer {
       text-align: center;
       padding: 10px;
-      font-size: 14px;
-      color: #888;
+      background-color: #111;
+      color: gray;
+    }
+
+    .formulario {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .formulario label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .formulario input, .formulario textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: white;
+    }
+
+    .formulario button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .formulario button:hover {
+      background-color: #e6c200;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="logo.png" alt="Logo da Guilda">
     <h1>Guilda 5 - Imperial Kids</h1>
     <p>"Aqui nasce a nova geração de lendas!"</p>
   </header>
 
-  <section class="sobre">
+  <section>
     <h2>Sobre a Guilda</h2>
     <p>Parte da <strong>Organização Imperial Gamer</strong>, a Guilda 5 - Imperial Kids é focada em formar novos talentos entre 10 e 15 anos para evoluir, competir e conquistar respeito no cenário competitivo.</p>
   </section>
 
-  <section class="lideres">
+  <section>
     <h2>Liderança</h2>
-    <p><strong>Líder:</strong> IMP Theus7</p>
-    <p><strong>Vice-líder:</strong> IMP Ladson</p>
-    <p><strong>Vice-líder:</strong> IMP Almeida</p>
+    <p><strong>Líder:</strong> IMP Theus7<br>
+       <strong>Vice-líder:</strong> IMP Ladson<br>
+       <strong>Vice-líder:</strong> IMP Almeida</p>
   </section>
 
-  <section class="requisitos">
+  <section>
     <h2>Requisitos para Entrar</h2>
     <ul>
       <li>Idade entre 10 e 15 anos</li>
@@ -78,7 +124,7 @@
     </ul>
   </section>
 
-  <section class="regras">
+  <section>
     <h2>Regras da Guilda</h2>
     <ul>
       <li>Respeitar todos os membros, líderes e adversários</li>
@@ -90,9 +136,28 @@
     </ul>
   </section>
 
+  <section class="formulario">
+    <h2>Formulário de Entrada</h2>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" required>
+
+      <label for="nick">Nick no jogo:</label>
+      <input type="text" id="nick" name="nick" required>
+
+      <label for="mensagem">Por que deseja entrar na Guilda?</label>
+      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
   <footer>
     © 2025 Guilda 5 - Imperial Kids | Organização Imperial Gamer
   </footer>
 
 </body>
-    </html>
+</html>
