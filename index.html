@@ -1,163 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Guilda 5 - Imperial Kids</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guilda IMPERIAL GAMER</title>
   <style>
     body {
-      background-color: #000;
+      background-color: #1e1b2e;
       color: white;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
-
     header {
-      background-color: #4B0082;
-      text-align: center;
+      background-color: #2a2540;
       padding: 20px;
+      text-align: center;
     }
-
     header img {
-      width: 100px;
-      border-radius: 50%;
+      height: 120px;
     }
-
-    header h1 {
-      color: #FFD700;
-      margin: 10px 0 0;
+    h1 {
+      margin-top: 10px;
+      color: #b187ff;
     }
-
-    header p {
-      margin: 5px 0 0;
-      color: white;
-    }
-
     section {
       padding: 20px;
+      max-width: 800px;
+      margin: auto;
     }
-
-    h2 {
-      color: #FFD700;
-      border-bottom: 3px solid #FFD700;
-      padding-bottom: 5px;
-    }
-
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #111;
-      color: gray;
-    }
-
-    .formulario {
-      background-color: #1a1a1a;
-      padding: 20px;
+    .card {
+      background-color: #2a2540;
       border-radius: 10px;
+      padding: 20px;
       margin-top: 20px;
     }
-
-    .formulario label {
+    label {
       display: block;
       margin-top: 10px;
+      font-weight: bold;
     }
-
-    .formulario input, .formulario textarea {
+    input[type="text"],
+    input[type="number"],
+    select {
       width: 100%;
       padding: 8px;
-      margin-top: 5px;
-      border: none;
       border-radius: 5px;
-      background-color: #333;
-      color: white;
+      border: none;
+      margin-top: 5px;
     }
-
-    .formulario button {
-      margin-top: 15px;
-      padding: 10px 20px;
-      background-color: #FFD700;
-      color: #000;
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    button {
+      background-color: #b187ff;
+      color: white;
+      padding: 10px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
     }
-
-    .formulario button:hover {
-      background-color: #e6c200;
+    button:hover {
+      background-color: #8c5dff;
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="logo.png" alt="Logo da Guilda">
-    <h1>Guilda 5 - Imperial Kids</h1>
-    <p>"Aqui nasce a nova geração de lendas!"</p>
+    <img src="logo.png" alt="Logo da Guilda" />
+    <h1>IMPERIAL GAMER</h1>
+    <p>Líder: IMP Theus7 | Vice-líderes: IMP Ladson, IMP Almeida</p>
   </header>
 
   <section>
-    <h2>Sobre a Guilda</h2>
-    <p>Parte da <strong>Organização Imperial Gamer</strong>, a Guilda 5 - Imperial Kids é focada em formar novos talentos entre 10 e 15 anos para evoluir, competir e conquistar respeito no cenário competitivo.</p>
+    <div class="card">
+      <h2>Requisitos</h2>
+      <ul>
+        <li>Idade entre 10 a 15 anos</li>
+        <li>Conseguir 3k de honra semanal no mínimo</li>
+        <li>Ter responsabilidade, respeito e bom comportamento</li>
+        <li>Ser ativo no jogo e nos grupos da guilda</li>
+        <li>Interagir e jogar com os membros</li>
+        <li>Pegar Elite até o final da temporada</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Formulário de Recrutamento</h2>
+      <form action="https://formsubmit.co/pedrocosta776622@gmail.com" method="POST">
+        <label>Nick:</label>
+        <input type="text" name="Nick" required />
+
+        <label>ID:</label>
+        <input type="text" name="ID" required />
+
+        <label>Idade:</label>
+        <input type="number" name="Idade" required />
+
+        <label>WhatsApp:</label>
+        <input type="text" name="WhatsApp" required />
+
+        <label>Patente BR e CS:</label>
+        <input type="text" name="Patente" required />
+
+        <label>Possui troca de Nick?</label>
+        <select name="Possui troca Nick?" required>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+          <option value="Talvez">Talvez</option>
+        </select>
+
+        <label>Consegue pegar mais de 7k de honras semanais?</label>
+        <select name="Pega 7k de honra?" required>
+          <option value="Sim">Sim</option>
+          <option value="Não">Não</option>
+        </select>
+
+        <label>Qual é o seu foco?</label><br/>
+        <input type="checkbox" name="Foco - Guerra de Guilda" value="Sim" /> 1️⃣ Guerra de Guilda<br/>
+        <input type="checkbox" name="Foco - Rank" value="Sim" /> 2️⃣ Rank<br/>
+        <input type="checkbox" name="Foco - Honras" value="Sim" /> 3️⃣ Honras<br/>
+        <input type="checkbox" name="Foco - Competitivo" value="Sim" /> 4️⃣ Competitivo<br/>
+        <input type="checkbox" name="Foco - Kids" value="Sim" /> 5️⃣ Kids<br/>
+
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://imperialkids.com/obrigado" />
+
+        <button type="submit">Enviar Formulário</button>
+      </form>
+    </div>
   </section>
-
-  <section>
-    <h2>Liderança</h2>
-    <p><strong>Líder:</strong> IMP Theus7<br>
-       <strong>Vice-líder:</strong> IMP Ladson<br>
-       <strong>Vice-líder:</strong> IMP Almeida</p>
-  </section>
-
-  <section>
-    <h2>Requisitos para Entrar</h2>
-    <ul>
-      <li>Idade entre 10 e 15 anos</li>
-      <li>Alcançar no mínimo 3.000 de honra por semana</li>
-      <li>Ser responsável, respeitoso e manter bom comportamento</li>
-      <li>Ser ativo no jogo e nos grupos da guilda</li>
-      <li>Jogar com os membros da guilda</li>
-      <li>Alcançar a patente <strong>Elite</strong> até o final da temporada</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Regras da Guilda</h2>
-    <ul>
-      <li>Respeitar todos os membros, líderes e adversários</li>
-      <li>Proibido ofensas, preconceito ou atitudes tóxicas</li>
-      <li>Participação obrigatória nos eventos (salvo justificativa)</li>
-      <li>Seguir as orientações dos ADMs e líderes</li>
-      <li>Inatividade sem aviso por mais de 7 dias pode resultar em remoção</li>
-      <li>Perfil com nome e imagem adequados às regras da comunidade</li>
-    </ul>
-  </section>
-
-  <section class="formulario">
-    <h2>Formulário de Entrada</h2>
-    <form>
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-
-      <label for="idade">Idade:</label>
-      <input type="number" id="idade" name="idade" required>
-
-      <label for="nick">Nick no jogo:</label>
-      <input type="text" id="nick" name="nick" required>
-
-      <label for="mensagem">Por que deseja entrar na Guilda?</label>
-      <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
-
-  <footer>
-    © 2025 Guilda 5 - Imperial Kids | Organização Imperial Gamer
-  </footer>
-
 </body>
-</html>
+  </html>
