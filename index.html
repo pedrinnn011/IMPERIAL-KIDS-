@@ -6,64 +6,85 @@
   <title>Guilda IMPERIAL GAMER</title>
   <style>
     body {
-      background-color: #1e1b2e;
-      color: white;
-      font-family: Arial, sans-serif;
+      background-color: #2e1e5c; /* roxo escuro */
+      color: #fff9db; /* amarelo claro */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
     }
     header {
-      background-color: #2a2540;
+      background: #ffd600; /* amarelo forte */
       padding: 20px;
       text-align: center;
+      color: #2e1e5c;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     }
     header img {
-      height: 120px;
+      height: 100px;
     }
     h1 {
-      margin-top: 10px;
-      color: #b187ff;
+      margin: 10px 0 0 0;
+      font-weight: 700;
     }
     section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 0 20px;
     }
     .card {
-      background-color: #2a2540;
-      border-radius: 10px;
+      background: #3b2f72; /* roxo médio */
+      border-radius: 12px;
       padding: 20px;
-      margin-top: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 0 10px rgba(255,214,0,0.3);
+    }
+    h2 {
+      color: #ffd600;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    ul li {
+      margin-bottom: 8px;
+      line-height: 1.3;
     }
     label {
       display: block;
-      margin-top: 10px;
-      font-weight: bold;
+      margin-top: 12px;
+      font-weight: 600;
     }
     input[type="text"],
     input[type="number"],
     select {
       width: 100%;
-      padding: 8px;
-      border-radius: 5px;
+      padding: 10px;
+      border-radius: 6px;
       border: none;
-      margin-top: 5px;
+      margin-top: 6px;
+      font-size: 1rem;
     }
     input[type="checkbox"] {
-      margin-right: 5px;
+      margin-right: 8px;
+      transform: scale(1.2);
     }
     button {
-      background-color: #b187ff;
-      color: white;
-      padding: 10px;
+      background-color: #ffd600;
+      color: #2e1e5c;
       border: none;
-      border-radius: 5px;
+      border-radius: 8px;
+      padding: 14px;
+      font-weight: 700;
+      font-size: 1.1rem;
       cursor: pointer;
-      margin-top: 20px;
+      margin-top: 25px;
       width: 100%;
+      box-shadow: 0 4px 12px rgba(255,214,0,0.7);
+      transition: background-color 0.3s ease;
     }
     button:hover {
-      background-color: #8c5dff;
+      background-color: #e6c200;
     }
   </style>
 </head>
@@ -79,7 +100,7 @@
       <h2>Requisitos</h2>
       <ul>
         <li>Idade entre 10 a 15 anos</li>
-        <li>Conseguir 3k de honra semanal no mínimo</li>
+        <li>Mínimo de 3k de honras semanais</li>
         <li>Ter responsabilidade, respeito e bom comportamento</li>
         <li>Ser ativo no jogo e nos grupos da guilda</li>
         <li>Interagir e jogar com os membros</li>
@@ -119,11 +140,9 @@
         </select>
 
         <label>Qual é o seu foco?</label><br/>
-        <input type="checkbox" name="Foco - Guerra de Guilda" value="Sim" /> 1️⃣ Guerra de Guilda<br/>
-        <input type="checkbox" name="Foco - Rank" value="Sim" /> 2️⃣ Rank<br/>
-        <input type="checkbox" name="Foco - Honras" value="Sim" /> 3️⃣ Honras<br/>
-        <input type="checkbox" name="Foco - Competitivo" value="Sim" /> 4️⃣ Competitivo<br/>
-        <input type="checkbox" name="Foco - Kids" value="Sim" /> 5️⃣ Kids<br/>
+        <input type="checkbox" name="Foco - Guerra de Guilda" value="Sim" /> Guerra de Guilda<br/>
+        <input type="checkbox" name="Foco - Honras Semanais" value="Sim" /> Honras Semanais<br/>
+        <input type="checkbox" name="Foco - Competitivo" value="Sim" /> Competitivo<br/>
 
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value="https://imperialkids.com/obrigado" />
@@ -133,4 +152,4 @@
     </div>
   </section>
 </body>
-  </html>
+</html>
